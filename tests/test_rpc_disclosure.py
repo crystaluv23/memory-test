@@ -122,8 +122,17 @@ class RPCDisclosureTests(Fixture):
         b=g.reply(self.request(g,args,id_=8,call='call2'));self.assertFalse(b['result']['success'])
         self.assertNotIn('dependency check',json.dumps(b))
         q=self.request(g,id_=9,call='call3');z=g.reply(q)
-        self.assertEqual(z['result'],{'contentItems':[],'success':False});self.assertEqual(len(g.service.events),2)
+        self.assertEqual(z['result'],{'contentItems':[{'type':'inputText',
+            'text':'{"error":"role_source_quota_exhausted"}\n'}],'success':False})
+        self.assertEqual(len(g.service.events),3)
+        self.assertEqual(g.service.remaining,c['source_wire_bytes']-sum(v['bytes'] for v in g.service.events))
         queries=[v['request'] for v in g.calls];replies=[v['reply'] for v in g.calls];g.verify(queries,replies)
+        tiny=role_config();tiny['source_wire_bytes']=1
+        empty=self.gateway(config=tiny);empty.bind('thread1','turn1')
+        q=self.request(empty);reply=empty.reply(q)
+        self.assertEqual(reply['result'],{'contentItems':[],'success':False})
+        self.assertEqual(empty.service.remaining,1)
+        empty.verify([q],[reply])
         off=self.gateway('solver',enabled=False);off.bind('thread1','turn1')
         denied=off.reply(self.request(off,{'id':'undeclared'}));self.assertFalse(denied['result']['success'])
 
