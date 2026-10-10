@@ -1,0 +1,15 @@
+{
+  "schema_version": "role-canary-v0",
+  "hypothesis": "One independent solver session validates the actual pinned CLI transport, socket tools and raw usage before any effect comparison",
+  "category": "qualification_canary",
+  "live_execution_authorized": false,
+  "formal_admission": false,
+  "model_sessions": 1,
+  "seed": 17,
+  "episode_index": 0,
+  "memory": "empty_baseline",
+  "budget": {"input_tokens": 24000, "output_tokens": 6000, "seconds": 60, "commands": 8},
+  "automatic_retry": false,
+  "provider_hard_token_limit": false,
+  "semantic_gain_claim": false
+}

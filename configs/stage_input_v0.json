@@ -1,0 +1,18 @@
+{
+  "schema_version": "stage-input-v0",
+  "hypothesis": "Exact producer receipts, immutable snapshots and a recompiled graph prevent future feedback and other-arm artifacts from entering resumed stage inputs; bounded report-transaction dependency reuse with write invalidation reduces repeated parsing without skipping raw or child-store verification",
+  "max_input_bytes": 8388608,
+  "ledger_decode_cache_bytes": 33554432,
+  "source_episode": "case_slot_with_registered_producer_phase",
+  "graph_authority": "recompile_and_compare_exactly",
+  "cache_policy": "same_bound_input_and_cutoff",
+  "controller_graph_policy": "one_execution_graph_per_store",
+  "environment_policy": "revalidate_python_os_native_sandbox_and_filtered_worker_environment_per_operation",
+  "controller_boundary_policy": "bound_extra_origin_roots_for_task_role_and_production",
+  "shadow_policy": "preproposal_corpus_separate_store",
+  "action_policy": "derive_disabled_noeligible_or_execute_from_actual_inputs",
+  "formal_admission": false,
+  "model_calls": 0,
+  "validation_scope_policy": "one_completed_validation_pass_transaction_reset_on_database_changes",
+  "validation_memo_max_bytes": 8388608
+}

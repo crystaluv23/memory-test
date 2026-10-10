@@ -1,0 +1,47 @@
+{
+  "schema_version": "paired-retention-v0",
+  "category": "synthetic_project_preferences",
+  "hypotheses": [
+    "Explicit kind and complete public schema permit a fresh final research proposal after a sealed known structure rejection; original task and research denominators remain unchanged."
+  ],
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "seed": 901,
+  "epochs": 2,
+  "cases_per_epoch": 5,
+  "arms": [
+    "on",
+    "off"
+  ],
+  "actor_turns_max": 3,
+  "actor_wall_seconds": 90,
+  "sessions_max": 4,
+  "total_wall_seconds": 180,
+  "observed_tokens_guard": 40000,
+  "wire_bytes_max": 16777216,
+  "line_bytes_max": 2097152,
+  "automatic_retry": false,
+  "formal_admission": false,
+  "memory_mutable_fields": [
+    "loader.global_briefs",
+    "loader.local_briefs",
+    "invalidation.type"
+  ],
+  "scenario_mutable_fields": [
+    "transfer_distance",
+    "rule_change"
+  ],
+  "learning_notes": [
+    {
+      "id": "aster-convention",
+      "text": "Synthetic observed user instruction, project Aster support triage convention v1: preserve input order and duplicate ticket ids. A safety_hold exactly true takes precedence: route HOLD, reason blocked. Otherwise severity >= 4 gives route FAST, reason urgent; severity < 4 gives route QUEUE, reason routine. This convention applies only to Aster and to equivalent renamed fields explicitly mapped to severity/safety_hold. A newer explicit current-task contract overrides any of these defaults. Do not apply it to another project."
+    },
+    {
+      "id": "boreal-convention",
+      "text": "Synthetic observed user instruction, project Boreal archived support triage convention v1: preserve input order. If safety_hold is true, route PAUSE, reason manual. Otherwise severity >= 3 gives route EXPRESS, reason high; lower severity gives route BACKLOG, reason normal. This is only the archived Boreal v1 rule, not Aster; an explicit current contract has precedence."
+    }
+  ],
+  "selection_rule": "both retention cases gain in each epoch and no added control errors; descriptive_only",
+  "context_clearance": "observed_native_recipe_not_full_provider_attestation",
+  "completion_from": "runs/paired-retention-20261008/attempt-001"
+}

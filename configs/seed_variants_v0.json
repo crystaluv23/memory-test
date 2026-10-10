@@ -1,0 +1,112 @@
+{
+  "schema_version": "seed-variants-v0",
+  "category": "synthetic_project_preferences",
+  "hypotheses": [
+    "完整seed保留跨会话已教约定，并正确处理迁移、失效、无关任务和异项目反例",
+    "1-B2实际抽象索引可能以更少展开提供多个下层经验；也可能增加维护成本或错误",
+    "2-A重要性/时间/抽象层组合相对最近排序可能有益，也可能被自评噪声干扰",
+    "2-B沿祖先邻近检索相对词汇检索可能改善迁移，也可能带入同类无关经验",
+    "公开规则变更后的反思新经验可能改善后续任务；自评与独立成功分开",
+    "研究输入明确公开已用candidate/challenge和public任务形态，避免把已消费的far挑战误称为near；模型改进尚未再验证"
+  ],
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "seed": 1103,
+  "actor_turns_max": 3,
+  "actor_wall_seconds": 90,
+  "sessions_max": 80,
+  "total_wall_seconds": 1800,
+  "observed_tokens_guard": 800000,
+  "wire_bytes_max": 16777216,
+  "line_bytes_max": 2097152,
+  "automatic_retry": false,
+  "formal_admission": false,
+  "global_k": 2,
+  "local_k": 8,
+  "brief_bytes_max": 6000,
+  "detail_bytes_max": 12000,
+  "importance_ema_alpha": 0.5,
+  "global_weights": {
+    "importance": 0.55,
+    "recency": 0.25,
+    "level": 0.2
+  },
+  "taxonomy": [
+    "workflow",
+    "workflow/testing",
+    "workflow/testing/triage",
+    "workflow/testing/validation",
+    "workflow/recovery",
+    "environment",
+    "environment/services",
+    "research",
+    "research/mechanisms"
+  ],
+  "arms": {
+    "off": {
+      "enabled": false,
+      "indices": false,
+      "global_rank": "combined",
+      "local_rank": "ancestor",
+      "reflection": false
+    },
+    "flat": {
+      "enabled": true,
+      "indices": false,
+      "global_rank": "off",
+      "local_rank": "lexical4",
+      "reflection": false
+    },
+    "seed": {
+      "enabled": true,
+      "indices": true,
+      "global_rank": "combined",
+      "local_rank": "ancestor",
+      "reflection": true
+    },
+    "no_index": {
+      "enabled": true,
+      "indices": false,
+      "global_rank": "combined",
+      "local_rank": "ancestor",
+      "reflection": true
+    },
+    "recent_global": {
+      "enabled": true,
+      "indices": true,
+      "global_rank": "recent",
+      "local_rank": "ancestor",
+      "reflection": true
+    },
+    "lexical_local": {
+      "enabled": true,
+      "indices": true,
+      "global_rank": "combined",
+      "local_rank": "lexical",
+      "reflection": true
+    },
+    "no_reflection": {
+      "enabled": true,
+      "indices": true,
+      "global_rank": "combined",
+      "local_rank": "ancestor",
+      "reflection": false
+    }
+  },
+  "screening_cases": 6,
+  "confirmation_cases": 3,
+  "eligible_candidates": [
+    "no_index",
+    "recent_global",
+    "lexical_local",
+    "no_reflection"
+  ],
+  "challenges": [
+    "near",
+    "far"
+  ],
+  "selection_rule": "protection_errors_then_retention_completion_then_actual_cost; equal_quality_cost_margin_10_percent; retain_seed_if_inconclusive",
+  "classification": "frozen_public_task_type",
+  "context_clearance": "observed_native_recipe_not_full_provider_attestation",
+  "research_summary_format": "public_tasks_and_applied_choice_v1"
+}

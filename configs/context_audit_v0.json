@@ -1,0 +1,16 @@
+{
+  "schema_version": "recorded-context-audit-v0",
+  "hypothesis": "A fresh subagent can still receive ambient global experience; actual recorded inputs must be checked separately from fork_turns and delivered study memory",
+  "max_rollout_bytes": 67108864,
+  "max_line_bytes": 2097152,
+  "max_records": 20000,
+  "forbidden_input_markers": [
+    "========= MEMORY_SUMMARY BEGINS =========",
+    "You have access to a memory folder with guidance from prior runs."
+  ],
+  "missing_or_encrypted_input": "unverified_never_clean",
+  "clearance": "exact_frozen_input_hash_allowlist_recorded_scope_only",
+  "usage_basis": "unique_recorded_client_responses_not_provider_attestation",
+  "formal_admission": false,
+  "model_calls": 0
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "schedule-contract-v0",
+  "status": "implementation_not_frozen",
+  "hypothesis": "Complete causal stage graphs and one shared round ledger reveal all maintenance and confirmation costs without mixing shared corpus attribution with independent learning",
+  "default_mode": "independent_learning",
+  "max_scenarios": 3,
+  "max_repeats": 14,
+  "max_slots": 10000,
+  "call_unit": "fresh_codex_session_invocation",
+  "execution_admitted": false,
+  "automatic_retry": false,
+  "target_memory_policy": "same_frozen_learning_cutoff",
+  "shadow_isolation": "separate_store_same_role_namespace",
+  "batch_policy": "sequential_worst_case_seconds_no_round_reset",
+  "control_seconds": 15,
+  "roles": {
+    "solver": {"input_tokens": 24000, "output_tokens": 6000, "seconds": 600, "commands": 60},
+    "acquisition": {"input_tokens": 24000, "output_tokens": 6000, "seconds": 600, "commands": 60},
+    "extractor": {"input_tokens": 12000, "output_tokens": 3000, "seconds": 120, "commands": 20},
+    "consolidation": {"input_tokens": 12000, "output_tokens": 3000, "seconds": 120, "commands": 20},
+    "reflector": {"input_tokens": 12000, "output_tokens": 3000, "seconds": 120, "commands": 20},
+    "oracle": {"input_tokens": 24000, "output_tokens": 6000, "seconds": 600, "commands": 60},
+    "evaluator": {"input_tokens": 16000, "output_tokens": 4000, "seconds": 180, "commands": 20},
+    "proposer": {"input_tokens": 16000, "output_tokens": 4000, "seconds": 180, "commands": 20},
+    "shadow": {"input_tokens": 16000, "output_tokens": 4000, "seconds": 180, "commands": 20}
+  }
+}

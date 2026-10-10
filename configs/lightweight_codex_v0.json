@@ -1,0 +1,23 @@
+{
+  "schema_version": "lightweight-codex-v0",
+  "hypothesis": "Fresh native Codex sessions can drive the existing evaluator/proposer causal loop; two memory proposals and one challenge may distinguish engineering viability from benefit.",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "seed": 801,
+  "iterations_max": 2,
+  "actor_turns_max": 12,
+  "actor_wall_seconds": 240,
+  "sessions_max": 64,
+  "total_wall_seconds": 3600,
+  "observed_tokens_guard": 1800000,
+  "wire_bytes_max": 16777216,
+  "line_bytes_max": 2097152,
+  "automatic_retry": false,
+  "formal_admission": false,
+  "selection": "descriptive_no_statistical_promotion_lower_burden_if_equal",
+  "authentication": "existing_cli_login_no_credentials_read_or_copy",
+  "context_clearance": "explicit_disabled_discovery_observed_thread_identity_not_full_provider_attestation",
+  "transport": "controller_codex_app_server",
+  "calibration_basis": "attempt-004 first solver 42731 serialized tokens; 20 tasks plus bounded research/extraction",
+  "solver_failure_policy": "record_zero_skip_extraction_continue_unique_units"
+}

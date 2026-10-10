@@ -1,0 +1,16 @@
+{
+  "schema_version": "provider-budget-v0",
+  "hypothesis": "Persistent budgets reserve counted input and bounded output before unique dispatch, retain unknown costs, reject breached or duplicate continuation, and reverify sealed receipts through an immutable read-only database without new authority",
+  "category": "infrastructure_acceptance",
+  "model": "memorylab-fixture",
+  "counter": "fixed_fixture_100",
+  "counter_units": "simulated_never_model_tokens",
+  "fixed_input_count": 100,
+  "minimum_output_tokens": 16,
+  "maximum_request_bytes": 262144,
+  "unknown_usage": "retain_full_reservation",
+  "automatic_retry": false,
+  "formal_admission": false,
+  "provider_budget_qualified": false,
+  "tokenizer_qualified": false
+}

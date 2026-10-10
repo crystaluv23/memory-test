@@ -1,0 +1,16 @@
+{
+  "schema_version": "rpc-disclosure-v0",
+  "hypothesis": "Actual fresh Codex dynamic requests use existing role-bound services; a new read-only verifier reconstructs bounded frozen snapshots and replays production methods and finite quotas without granting send or resume authority",
+  "source_roles": ["extractor", "consolidation", "reflector"],
+  "memory_roles": ["solver", "evaluator", "proposer"],
+  "max_calls": 32,
+  "max_arguments_bytes": 8192,
+  "max_reply_bytes": 262144,
+  "max_total_reply_bytes": 524288,
+  "max_snapshot_bytes": 8388608,
+  "counting_unit": "rpc_wire_bytes_not_model_tokens",
+  "duplicate_policy": "reject_before_service_no_resend",
+  "replay_policy": "frozen_initial_service_state_exact_production_methods",
+  "formal_admission": false,
+  "actual_model_calls": 0
+}

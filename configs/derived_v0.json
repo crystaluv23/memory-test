@@ -1,0 +1,17 @@
+{
+  "schema_version": "derived-contract-v0",
+  "status": "implementation_not_frozen",
+  "hypothesis": "Bounded single-level abstractions and event-triggered L2 reflection can improve transfer but may overgeneralize; counterexamples decide usefulness",
+  "model": null,
+  "source_input": "progressive_handles",
+  "max_input_bytes": 65536,
+  "max_output_bytes": 16384,
+  "max_indices": 8,
+  "root_type_hint": "root",
+  "index_brief_bytes": 800,
+  "index_detail_bytes": 4000,
+  "annotation_bytes": 2000,
+  "consolidation_prompt": "Produce indices only from the supplied active canonical cards. Each index needs at least two exact supplied card refs, a common ancestor type, a brief and a detail explaining the abstraction's conditions, exceptions and limits. Do not merely assume same category means same applicability. No recursive abstraction, external facts, hidden outcomes or new L1 cards. Return an empty indices list when support is insufficient.",
+  "reflection_prompt": "Produce annotations only for supplied eligible card refs after observed failure or explicit feedback. State only source-supported refinements to application, exceptions or uncertainty. Do not invent an answer from failure alone; do not change L1. Return an empty annotations list when evidence is insufficient.",
+  "live_execution_authorized": false
+}

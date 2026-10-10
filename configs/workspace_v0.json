@@ -1,0 +1,12 @@
+{
+  "schema_version": "workspace-boundary-v0",
+  "hypothesis": "Parent-side reads must preserve the same file boundary as isolated worker processes, including substituted links and files created by production execution",
+  "max_file_bytes": 67108864,
+  "max_tree_bytes": 134217728,
+  "max_tree_entries": 8192,
+  "max_depth": 32,
+  "transient_sockets": [".memory.sock", ".scenario.sock"],
+  "links": "reject_symbolic_and_multiple_hard_links",
+  "formal_admission": false,
+  "model_calls": 0
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "usable-seed-memory-v1",
+  "runtime_family": "memorylab.seed_memory.SeedSession",
+  "selected_mechanism": "seed",
+  "arm": {
+    "enabled": true,
+    "indices": true,
+    "global_rank": "combined",
+    "local_rank": "ancestor",
+    "reflection": true
+  },
+  "runtime": {
+    "global_k": 2,
+    "local_k": 8,
+    "brief_bytes_max": 6000,
+    "detail_bytes_max": 12000,
+    "importance_ema_alpha": 0.5,
+    "global_weights": {
+      "importance": 0.55,
+      "recency": 0.25,
+      "level": 0.2
+    },
+    "taxonomy": [
+      "workflow",
+      "workflow/testing",
+      "workflow/testing/triage",
+      "workflow/testing/validation",
+      "workflow/recovery",
+      "environment",
+      "environment/services",
+      "research",
+      "research/mechanisms"
+    ]
+  },
+  "reflection": "explicit public feedback -> native reflection -> source-backed new leaf -> explicit supersession -> native index rebuild",
+  "reflection_scope": "experiment adapter tested on registered Aster rule change; generic Recommand integration pending",
+  "task_type_source": "caller-supplied registered category",
+  "abstraction_levels": [
+    0,
+    1
+  ],
+  "importance_self_report_only": true,
+  "progressive_disclosure": true,
+  "formal_admission": false,
+  "observed_category": "synthetic_project_preferences",
+  "tested_plan_sha256": "d4699434061cd701855b8b37320ba404d16e471e9b8dbcf8fae937f789a40c17"
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+runs/
+.DS_Store
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.venv/
+venv/

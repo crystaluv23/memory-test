@@ -1,0 +1,15 @@
+{
+  "schema_version": "graph-run-v0",
+  "hypothesis": "Snapshot-only fresh stores and a frozen topology driver eliminate manual dispatch and migration without copying controller secrets or losing failed work",
+  "mode": "explicit_diagnostic_transports",
+  "max_program_bytes": 262144,
+  "max_total_program_bytes": 8388608,
+  "initialization_policy": "all_snapshots_specs_graph_and_programs_before_nonoverwrite_database_publish",
+  "program_policy": "exact_nondisabled_actor_slot_map_frozen_before_execution",
+  "source_boundary": "origin_controller_parent_and_round_root",
+  "existing_store_policy": "exact_recipe_resume_no_reset",
+  "batch_policy": "frozen_batches_and_shared_journal_round_guard",
+  "recovery_policy": "revalidate_publications_no_automatic_retry",
+  "formal_admission": false,
+  "model_calls": 0
+}

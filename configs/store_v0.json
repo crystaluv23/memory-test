@@ -1,0 +1,16 @@
+{
+  "schema_version": "corpus-store-v0",
+  "status": "implementation_not_frozen",
+  "hypothesis": "Cutoff-bound public corpus transplantation preserves comparable experience while separate research stores prevent future feedback and derived-memory contamination",
+  "max_sources": 4096,
+  "max_cards": 8192,
+  "max_usage": 16384,
+  "max_archived_indices": 1024,
+  "max_specs": 256,
+  "max_snapshot_bytes": 67108864,
+  "purposes": ["initial_checkpoint", "shared_acquisition", "research_shadow"],
+  "derived_policy": "historical_reference_only_rebuild_active_l2",
+  "index_credit_transfer": "none_no_causal_support_for_leaf_assignment",
+  "formal_admission": false,
+  "model_calls": 0
+}

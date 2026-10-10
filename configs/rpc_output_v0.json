@@ -1,0 +1,14 @@
+{
+  "schema_version": "rpc-output-v0",
+  "hypothesis": "Frozen role schemas and exact request-bound raw results enter shared atomic materializers and receipt-bound graph publication, including cross-store recovery and unsealed interruption, without fabricated exec events, retries, denominator loss or formal authority",
+  "mode": "typed_native_rpc_fixed_fixture",
+  "roles": ["extractor", "consolidation", "reflector", "evaluator", "proposer"],
+  "max_output_bytes": 262144,
+  "max_schema_depth": 32,
+  "max_capture_bytes": 33554432,
+  "raw_policy": "native_rpc_bytes_not_synthetic_exec_events",
+  "final_policy": "frozen_role_schema_unique_final_answer",
+  "actual_model_calls": 0,
+  "formal_admission": false,
+  "automatic_retry": false
+}

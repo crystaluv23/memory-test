@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "hypothesis": "Bounded populations and content-addressed prepare/report keep local orchestration below the friction target at the declared fixture scale",
+  "category": "infrastructure_acceptance",
+  "population": 8,
+  "canonical_cards": 24,
+  "seeds": [101, 102, 103],
+  "repeats": 10,
+  "terminal_trial_policy": "missing_no_execution",
+  "prepare_p95_seconds": 60,
+  "report_p95_seconds": 10,
+  "live_model_calls": 0,
+  "acceptance_gate_complete": false
+}

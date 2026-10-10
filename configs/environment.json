@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "model": null,
+  "reasoning_effort": "high",
+  "seed": 20261007,
+  "repeats": 1,
+  "episodes": 5,
+  "families": ["recovery", "repair", "evidence"],
+  "arms": [{"id": "baseline", "adapter": "off", "reflect": false}],
+  "timeout_seconds": 600,
+  "command_limit": 60,
+  "brief_budget_bytes": 6000,
+  "disclosure_budget_bytes": 18000
+}

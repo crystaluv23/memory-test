@@ -1,0 +1,20 @@
+{
+  "schema_version": "role-stage-v0",
+  "hypothesis": "Receipt-bound role transport plus replayable cross-store start and publication permits a complete causal stage graph without duplicated calls, refunded disclosure or shadow leakage; committed captures, audit wires and publication seals remain identical to actual files on every cached consumption; interruption exit verification binds the preserved process handle while accepting a later independently confirmed exit reason",
+  "mode": "explicit_diagnostic_transports",
+  "roles": [
+    "extractor",
+    "consolidation",
+    "reflector",
+    "evaluator",
+    "proposer",
+    "shadow"
+  ],
+  "max_fixture_bytes": 262144,
+  "max_seal_bytes": 33554432,
+  "control_boundary": "ledger_parent_scope_root_and_output_root",
+  "cross_store_policy": "immutable_child_completion_then_parent_publish",
+  "automatic_retry": false,
+  "formal_admission": false,
+  "model_calls": 0
+}

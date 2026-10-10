@@ -1,0 +1,71 @@
+{
+  "schema_version": "runtime-contract-v0",
+  "status": "implementation_not_frozen",
+  "hypothesis": "Bounded progressive loading and immutable navigation indices preserve provenance and expose actual consumption without source escapes",
+  "brief_tokens": 1500,
+  "detail_tokens": 4500,
+  "brief_bytes": 16000,
+  "detail_bytes": 48000,
+  "max_requests": 64,
+  "credit_ema_alpha": 0.2,
+  "index_min_support": 2,
+  "index_max_support": 8,
+  "index_max_depth": 1,
+  "reflection_max_annotations": 2,
+  "reflection_prompt": "Produce navigation annotations only from supplied current card references. Preserve applicability and exceptions. Do not change L1, invent a rule or use future/hidden results. Return an empty list when evidence is insufficient.",
+  "reflection_model": null,
+  "tokenizer": {
+    "id": "utf8-byte-offline-v0",
+    "live_qualified": false
+  },
+  "route_terms": {
+    "workflow/testing": [
+      "test",
+      "testing",
+      "测试"
+    ],
+    "workflow/recovery": [
+      "resume",
+      "checkpoint",
+      "recover",
+      "恢复",
+      "断点"
+    ],
+    "workflow/repair": [
+      "repair",
+      "patch",
+      "fix",
+      "修复"
+    ],
+    "environment/services": [
+      "service",
+      "network",
+      "database",
+      "服务",
+      "网络",
+      "数据库"
+    ],
+    "evidence/time": [
+      "timestamp",
+      "asof",
+      "time",
+      "时间",
+      "时点"
+    ],
+    "research/challenges": [
+      "challenge",
+      "scenario",
+      "evaluator",
+      "场景",
+      "挑战"
+    ],
+    "research/mechanisms": [
+      "mechanism",
+      "proposer",
+      "memory",
+      "机制",
+      "记忆"
+    ]
+  },
+  "research_ref_policy": "metered_exact_refs_in_research_namespace_only_v1"
+}

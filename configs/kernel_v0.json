@@ -1,0 +1,76 @@
+{
+  "schema_version": "kernel-contract-v0",
+  "status": "implementation_not_frozen",
+  "live_execution_authorized": false,
+  "memory_fields": {
+    "organizer.type": ["flat", "fixed_tree"],
+    "consolidation.type": ["none", "single_index"],
+    "retrieval.type": ["lexical", "tree", "hybrid_tree_lexical"],
+    "loader.global_briefs": [0, 2, 4],
+    "loader.local_briefs": [4, 8],
+    "credit.type": ["none", "outcome_ema"],
+    "reflection.trigger": ["off", "failure", "feedback"],
+    "invalidation.type": ["none", "explicit_supersession"]
+  },
+  "memory_initial": {
+    "organizer.type": "flat",
+    "consolidation.type": "none",
+    "retrieval.type": "lexical",
+    "loader.global_briefs": 0,
+    "loader.local_briefs": 4,
+    "credit.type": "none",
+    "reflection.trigger": "off",
+    "invalidation.type": "explicit_supersession"
+  },
+  "scenario_families": ["feedback_retention", "workflow_reuse", "environment_gotcha", "stale_memory", "abstraction_transfer", "context_interference"],
+  "scenario_fields": {
+    "distractor_count": [0, 2, 4],
+    "transfer_distance": ["near", "far"],
+    "rule_change": ["none", "registered_revision"],
+    "context_profile": ["clean", "pressure"],
+    "semantic_interference": ["none", "similar_inapplicable"]
+  },
+  "scenario_initial": {
+    "family": "feedback_retention",
+    "distractor_count": 2,
+    "transfer_distance": "near",
+    "rule_change": "none",
+    "context_profile": "clean",
+    "semantic_interference": "none"
+  },
+  "verifier_mapping": {
+    "feedback_retention": "feedback_retention-v0",
+    "workflow_reuse": "workflow_reuse-v0",
+    "environment_gotcha": "environment_gotcha-v0",
+    "stale_memory": "stale_memory-v0",
+    "abstraction_transfer": "abstraction_transfer-v0",
+    "context_interference": "context_interference-v0"
+  },
+  "taxonomy": ["workflow", "workflow/testing", "workflow/recovery", "workflow/repair", "environment", "environment/services", "evidence", "evidence/time", "research", "research/challenges", "research/mechanisms"],
+  "source_event_types": ["user_input", "agent_output", "tool_call", "tool_result", "file_diff", "explicit_feedback", "visible_outcome", "explicit_hypothesis"],
+  "role_source_namespaces": {
+    "solver": [],
+    "extractor": ["task/*", "research/evaluator", "research/proposer"],
+    "reflector": ["task/*", "research/evaluator", "research/proposer"],
+    "evaluator": ["research/evaluator"],
+    "proposer": ["research/proposer"]
+  },
+  "limits": {
+    "proposal_hypothesis_bytes": 4000,
+    "proposal_evidence_refs": 16,
+    "source_text_bytes": 2000000,
+    "extract_cards_per_batch": 3,
+    "card_brief_bytes": 1400,
+    "card_detail_bytes": 12000,
+    "card_evidence_refs": 16,
+    "card_supersedes_refs": 8
+  },
+  "extractor": {
+    "schema_version": 1,
+    "id": "canonical-extractor-v0",
+    "model": null,
+    "prompt": "Produce zero to three canonical experience cards from the supplied observable sources only. Each card needs a brief, detailed actual context, applicability and exceptions in detail, evidence refs to the exact visible source versions, and an observed outcome. Do not invent causes, future task results or authority. A source pointer proves provenance, not semantic truth. Empty cards is valid. Do not read gold, hidden tests, other arms or global memory. Preserve previous versions and use exact supersedes refs only when explicitly replacing them.",
+    "live_ready": false
+  },
+  "research_hypothesis_scope": "H1/H2 plumbing only until live stages; no benefit inference from fixtures"
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "subagent-context-preflight-v0",
+  "hypothesis": "Disabling memory for the controller chat may prevent ambient memory injection into fresh subagents, but only the actual new subject input can establish its observed effect",
+  "route": "existing_native_subagent",
+  "controller_thread": "01a11abe-e527-7c41-bb0c-a1461eab9434",
+  "allowed_control_methods": ["initialize", "thread/memoryMode/set"],
+  "memory_mode": "disabled",
+  "global_config_write": false,
+  "copy_authentication": false,
+  "subject_sessions_max": 1,
+  "fork_turns": "none",
+  "task_name": "context_probe_20261008_001",
+  "subject_message": "Independent context-isolation diagnostic. Do not call any tools, read files, browse, use memory, or message other agents. Return exactly this JSON as your final response: {\"status\":\"context_isolation_ready\"}. This is a readiness probe, not an experimental task.",
+  "expected_final": {"status": "context_isolation_ready"},
+  "subject_tools_max": 0,
+  "automatic_retry": false,
+  "formal_admission": false,
+  "gain_evidence": false
+}

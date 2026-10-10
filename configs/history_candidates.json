@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "category": "real_history_candidates",
+  "project": "/Users/l/Project/Recommandation",
+  "candidates": [
+    {
+      "id": "history-v138",
+      "split": "adapter",
+      "checkpoint": {
+        "commit": "b056e0ca49169389677114d773a4a4a124d5d526",
+        "files": []
+      },
+      "learning": {
+        "path": "/Users/l/.codex/sessions/2026/09/22/rollout-2026-09-22T09-47-13-01a0c6cb-b262-7533-a8dc-e05990dca214.jsonl",
+        "file_sha256": "8e5d4f191a219808a42a6a0c794dbe31ac21c09f3c69f234be50c2e1c7a5851f",
+        "line": 10,
+        "line_sha256": "56a975d9e9a44e5c57d92ddd474c7a3404dd338b1d1d7ef2e57868c25006b41e",
+        "text_sha256": "60cea68f5c13a90545144b43ecf9871b10282796c0bed262ed7b68e23042b835",
+        "timestamp": "2026-09-22T01:47:19.770Z"
+      },
+      "target": {
+        "path": "/Users/l/.codex/sessions/2026/09/22/rollout-2026-09-22T09-47-13-01a0c6cb-b262-7533-a8dc-e05990dca214.jsonl",
+        "file_sha256": "8e5d4f191a219808a42a6a0c794dbe31ac21c09f3c69f234be50c2e1c7a5851f",
+        "line": 4733,
+        "line_sha256": "19730a366f9e09e2036f522a7bd500b55b7435c26e0f30375f150f42f70f2bb6",
+        "text_sha256": "324354a9ebd9ce4694196fe519e179e16b9c1d76db34af42b484a6e9f8f0a805",
+        "timestamp": "2026-09-23T03:30:03.255Z"
+      },
+      "run_contract": {
+        "path": "/Users/l/Project/Recommandation/runs/cold_start/evolution/information-evolution-dual-self-evolution-20260922-v138/run_contract.json",
+        "sha256": "eca4ff6f6a77092a92f7ce98e5fc1df19f3675b68ab5b4e6ccf30301cabfafce"
+      },
+      "environment": null,
+      "feedback": null,
+      "verifier": null
+    },
+    {
+      "id": "history-v140",
+      "split": "adapter",
+      "checkpoint": {
+        "commit": "3e0c7df8e4d45accd08e13ae5ee51dd74db689fc",
+        "files": []
+      },
+      "learning": null,
+      "target": null,
+      "run_contract": {
+        "path": "/Users/l/Project/Recommandation/runs/cold_start/evolution/information-evolution-jev-dual-self-evolution-20260926-v140/run_contract.json",
+        "sha256": "82b0fee7a5433d3db476de1ee03d41e00317eaffda35bef45ccf0da0f70e36f8"
+      },
+      "environment": null,
+      "feedback": null,
+      "verifier": null
+    },
+    {
+      "id": "history-v141",
+      "split": "adapter",
+      "checkpoint": {
+        "commit": "628516d540c878ca8e9dd1bc336f9b86e3ae1efc",
+        "files": []
+      },
+      "learning": null,
+      "target": null,
+      "run_contract": {
+        "path": "/Users/l/Project/Recommandation/runs/cold_start/evolution/information-evolution-jev-dual-self-evolution-20260926-v141/run_contract.json",
+        "sha256": "5de3842dc54445093ea9b931f437f17d53bf21766076d7433e807083df56a8b4"
+      },
+      "environment": null,
+      "feedback": null,
+      "verifier": null
+    }
+  ]
+}

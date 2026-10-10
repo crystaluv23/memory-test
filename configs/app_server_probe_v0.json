@@ -1,0 +1,22 @@
+{
+  "schema_version": "app-server-probe-v0",
+  "hypothesis": "A trusted Codex app server can keep its private home and environment inaccessible to commands through an explicit permission profile, without granting tools the server's authentication access",
+  "category": "model_free_cli_boundary_diagnostic",
+  "allowed_methods": ["initialize", "initialized", "permissionProfile/list", "command/exec"],
+  "timeout_seconds": 30,
+  "command_timeout_ms": 10000,
+  "max_wire_bytes": 1048576,
+  "max_line_bytes": 131072,
+  "max_command_output_bytes": 32768,
+  "raw_policy": "exact_bounded_wire_prefix_and_overflow_chunk_hash_no_silent_truncation",
+  "temporary_authentication": "none_only_harmless_markers",
+  "server_execution": "trusted_temporary_controller_not_nested_native_sandbox",
+  "authentication_store": "isolated_empty_file_store_no_keychain",
+  "inference_policy": "no_thread_turn_login_account_or_provider_rpc",
+  "tool_permissions": "explicit_profile_root_deny_minimal_runtime_read_workspace_write_private_deny_network_off",
+  "legacy_sandbox_settings": "forbidden",
+  "formal_admission": false,
+  "authentication_qualified": false,
+  "provider_budget_qualified": false,
+  "model_calls": 0
+}

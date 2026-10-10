@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "kind": "memory",
+  "id": "usable-memory-flat-v0",
+  "version": 1,
+  "parent": null,
+  "config": {
+    "consolidation.type": "none",
+    "credit.type": "none",
+    "invalidation.type": "explicit_supersession",
+    "loader.global_briefs": 0,
+    "loader.local_briefs": 4,
+    "organizer.type": "flat",
+    "reflection.trigger": "off",
+    "retrieval.type": "lexical"
+  }
+}

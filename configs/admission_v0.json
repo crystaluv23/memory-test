@@ -1,0 +1,13 @@
+{
+  "schema_version": "role-admission-v0",
+  "status": "implementation_not_frozen",
+  "hypothesis": "Replaying controller-captured raw events and validating frozen role inputs before atomic materialization prevents self-certified completion, input widening and partial learning",
+  "categories": ["infrastructure_acceptance", "qualification_canary"],
+  "formal_admission": false,
+  "automatic_retry": false,
+  "max_capture_bytes": 33554432,
+  "max_source_audit_bytes": 1048576,
+  "materialization_roles": ["extractor", "consolidation", "reflector", "evaluator", "proposer"],
+  "source_policy": "supplied_refs_and_actual_disclosed_ranges",
+  "semantic_validation": "not_established"
+}

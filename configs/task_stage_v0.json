@@ -1,0 +1,18 @@
+{
+  "schema_version": "task-stage-v0",
+  "hypothesis": "Raw task capture and independent production grading must commit with source and usage records so recovery cannot duplicate a solve or lose its causal episode; committed captures, audit wires and publication seals remain identical to actual files on every cached consumption; interruption exit verification binds the preserved process handle while accepting a later independently confirmed exit reason",
+  "mode": "explicit_python_transport_fixture",
+  "max_fixture_bytes": 262144,
+  "max_seal_bytes": 33554432,
+  "task_roles": [
+    "solver",
+    "acquisition",
+    "oracle"
+  ],
+  "automatic_retry": false,
+  "usage_basis": "served_memory_and_self_claim_separate_from_model_read_and_causal_benefit",
+  "behavior_link_policy": "no_automatic_inference_from_open_or_claim",
+  "observable_policy": "whole_event_or_explicit_unavailable_metadata",
+  "formal_admission": false,
+  "model_calls": 0
+}

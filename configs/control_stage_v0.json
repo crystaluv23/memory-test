@@ -1,0 +1,14 @@
+{
+  "schema_version": "control-stage-v0",
+  "hypothesis": "Receipt-derived controller artifacts preserve every planned task and distinguish structural publication from behavioral and research quality",
+  "mode": "fixture_only",
+  "max_report_bytes": 8388608,
+  "max_research_view_bytes": 1048576,
+  "research_visibility": "aggregate_task_outcomes_no_private_grade_or_raw_traces",
+  "blocked_grade": "unavailable_no_execution",
+  "shadow_quality": "unavailable_no_promotion",
+  "cross_store_commit": "immutable_child_receipt_then_parent_publish",
+  "lock_policy": "distinct_control_task_and_role_output_locks",
+  "formal_admission": false,
+  "model_calls": 0
+}

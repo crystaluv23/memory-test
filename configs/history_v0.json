@@ -1,0 +1,15 @@
+{
+  "schema_version": "history-contract-v0",
+  "status": "implementation_not_frozen",
+  "hypothesis": "Authentic time-ordered user events and pinned pre-learning state permit causal replay; retrospective reports alone do not",
+  "max_source_bytes": 67108864,
+  "max_event_bytes": 262144,
+  "max_checkpoint_file_bytes": 2097152,
+  "max_checkpoint_bytes": 67108864,
+  "minimum_adapter_chains": 2,
+  "minimum_untouched_holdout_chains": 3,
+  "forbidden_path_parts": [".git", ".codex", ".env", "auth.json", "credentials", "secrets", "memory", "memories", "reports", "progress", "runs", "answers", "gold"],
+  "required_verifier_coverage": ["production_entry", "recovery", "successor_consumption", "illegal_action"],
+  "feedback_predicates": ["none", "production_check_failed"],
+  "live_execution_authorized": false
+}
