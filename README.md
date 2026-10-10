@@ -6,7 +6,7 @@
 
 **当前实施中，K 尚未冻结，尚无正式记忆收益结果。** 已有声明式 M/e、不可变证据与卡片、共享 runtime、六类 interactive 场景、冻结/恢复、配对判断和受控交替 epoch。L2 生成与 Recommandation 历史采集可做离线合同验证；正式独立 Codex 的完整学习链、H2、辨别力和独立复核尚未通过。
 
-仓库是控制端，不是受测工作区。实验遵守 [AGENTS.md](AGENTS.md) 与 [协议](docs/PROTOCOL.md)：先写合同/配置，再实现，再验证；不修改 Recommandation 或全局 Codex 记忆，不默认发模型请求。无需 Python 第三方包，离线核心需要 Python 3.9+；实际工作区隔离依赖 macOS sandbox-exec。
+仓库是控制端，不是受测工作区。实验遵守 [AGENTS.md](AGENTS.md) 与 [协议](docs/PROTOCOL.md)：先写合同/配置，再实现，再验证；不修改 Recommandation 或全局 Codex 记忆，不默认发模型请求。无需 Python 第三方包，发布验收使用 Python 3.12（系统 Python 3.9 的 SQLite 只读封存兼容检查未通过）；实际工作区隔离依赖 macOS sandbox-exec。
 
 ## 本机 Codex 飞轮入口
 
@@ -21,7 +21,7 @@
 `python3 -m memorylab.rpc_materialization_fixture run --role <extractor|consolidation|reflector|evaluator|proposer> --cli <明确 CLI 路径> --output <新目录>` 用真实 fresh Codex 会话、固定本机响应和严格 outputSchema，将原始角色 final 接入现有 canonical/L2/proposal 生产提交。`python3 -m memorylab.rpc_materialization_fixture verify --output <该目录>` 在新进程只读重算披露、原始 RPC、生产 request 与提交结果；不建库、不写 receipt、不启动受测者。失败/pending 保留分母，恢复同一 sealed 输出不重发。该入口无真实模型/认证，usage 模拟，没有正式全图、收益或冻结资格。[输出合同](docs/RPC_OUTPUT_CONTRACT.md)
 
 ```sh
-python3 scripts/verify_offline.py
+python3.12 scripts/verify_offline.py
 python3 -m memorylab doctor
 python3 -m memorylab kernel --db runs/local.sqlite init
 python3 -m memorylab history audit --catalog configs/history_candidates.json --output runs/history-audit/current.json
@@ -65,4 +65,4 @@ request 的字段、冻结配置和精确程序映射见 [合同](docs/GRAPH_RUN
 
 ## GitHub 源码发布
 
-上传版本包含 Codex 控制端源码、配置、测试、脚本和文档。`runs/` 原始实验记录与快照仅保留在本机，不随 Git 上传；文档中的本地记录链接需要完整本机副本，结果摘要不能替代正式结果所要求的原始事件和独立评分。克隆后可直接运行 `python3 scripts/verify_offline.py`，生成新的本地离线验证记录；不会启动正式模型测试。
+上传版本包含 Codex 控制端源码、配置、测试、脚本和文档。`runs/` 原始实验记录与快照仅保留在本机，不随 Git 上传；文档中的本地记录链接需要完整本机副本，结果摘要不能替代正式结果所要求的原始事件和独立评分。克隆后可直接运行 `python3.12 scripts/verify_offline.py`，生成新的本地离线验证记录；不会启动正式模型测试。
